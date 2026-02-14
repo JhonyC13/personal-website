@@ -299,7 +299,9 @@ main div.horizontal-container > img{
     background-color: var(--gray1);
     border: 3px solid gray;
     border-radius: 8px;
-    min-width: 40%;
+    width: 40%;
+    max-width: 40%;
+    height: auto;
     /* box-shadow: 0px 0px 50px var(--purple2);  */
 }
 
@@ -392,8 +394,14 @@ footer > p > strong{
 
     main div.horizontal-container{
         flex-direction: column;
+        padding: 5%;
     }
     
+    main div.horizontal-container > img{
+        width: 80%;
+        max-width: 100%;
+    }
+
     main div.horizontal-container > #personal-img{
         min-width: 250px !important;
         width: 250px !important;
