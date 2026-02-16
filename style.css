@@ -133,7 +133,7 @@ nav{
     transition: 0.3s ease-in-out;
 }
 
-nav:hover{
+nav.open{
     width: 250px;
     padding: 10px 15px 0px 15px;
     background-color: rgba(21, 21, 22, 0.5);
@@ -147,7 +147,7 @@ nav:hover{
     transition-duration: 0.3s;
 }
 
-nav:hover > .expand-btn{
+nav.open > .expand-btn{
     padding-left: 0px;
     transition-duration: 0.3s;
 }
@@ -159,7 +159,7 @@ nav:hover > .expand-btn{
     transition-duration: 0.3s;
 }
 
-nav:hover > .expand-btn > i{
+nav.open > .expand-btn > i{
     font-size: 24px;
     transition-duration: 0.3s;
 }
@@ -181,11 +181,11 @@ nav:hover > .expand-btn > i{
     border-radius: 5px;
 }
 
-nav:hover > .nav-list > li.nav-item{
+nav.open > .nav-list > li.nav-item{
     opacity: 50%;
 }
 
-nav:hover > .nav-list > li.nav-item:hover{
+nav.open > .nav-list > li.nav-item:hover{
     /* background-image: linear-gradient(to right, var(--purple3), var(--purple2), rgba(255, 255, 255, 0)); */
     /* background-color: var(--purple2); */
     background-position: left;
@@ -209,7 +209,7 @@ nav:hover > .nav-list > li.nav-item:hover{
     transition-duration: 0.35s;
 }
 
-nav:hover >.nav-list > li.nav-item > a > .nav-txt{
+nav.open >.nav-list > li.nav-item > a > .nav-txt{
     margin-left: 30px;
     opacity: 100%;
     transition-duration: 0.35s;
