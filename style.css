@@ -42,6 +42,7 @@ body{
 }
 
 header{
+    z-index: 1;
     margin-left: 70px;
     width: 100%;
     /* background-color: var(--gray4); */
@@ -117,6 +118,7 @@ header > div:hover > a > img{
 }
 
 nav{
+    z-index: 2;
     width: 65px;
     height: 100%;
     background-color: var(--gray3);
@@ -250,8 +252,56 @@ main div.horizontal-container{
     display: flex;
     align-items: center;
     gap: 30px;
-} 
+}
 
+main div.horizontal-container > .projects-text{
+    flex: 1;
+}
+
+
+main div.horizontal-container > .carousel {
+    flex: 2;
+    background-color: var(--gray1);
+    border: 3px solid gray;
+    border-radius: 8px;
+    width: 65%;
+    max-width: 65%;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 16 / 9;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-track img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.carousel-dots span {
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-dots span.active {
+    background: white;
+}
 
 main div.right-container{
     /* padding: 5% 10% 5% 12%; */
@@ -386,7 +436,7 @@ footer > p > strong{
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.63);
 }
 
-@media (max-width: 768px){ /* para telas menores que 768px */
+@media (max-width: 1100px){ /* para telas menores que 768px */
     
     header{
         backdrop-filter: blur(8px);
@@ -397,6 +447,11 @@ footer > p > strong{
         padding: 5%;
     }
     
+    main div.horizontal-container > .carousel {
+        width: 80%;
+        max-width: 100%;
+    }
+
     main div.horizontal-container > img{
         width: 80%;
         max-width: 100%;
