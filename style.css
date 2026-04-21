@@ -267,7 +267,7 @@ main div.horizontal-container > .projects-text{
 
 main div.horizontal-container > .projects-text .link-container{
     text-align: center;
-    padding: 15px;
+    padding: 15px 0px;
 }
 
 .link-container a{
@@ -278,14 +278,14 @@ main div.horizontal-container > .projects-text .link-container{
     text-decoration: none;
     padding: 5px 10px;
     color: white;
-    transition: 0.5s;
+    transition: 0.4s ease-in-out;
 }
 
 .link-container a:hover{
     background-color: white;
     border: 2px solid var(--purple3);
     color: var(--purple3);
-    transition: 0.5s;
+    transition: 0.4s ease-in-out;
 }
 
 main div.horizontal-container > .carousel {
@@ -464,7 +464,7 @@ footer > p > strong{
     }
 
     .title-h1{
-        font-size: 28px;
+        font-size: 24px;
     }
 
     main div.horizontal-container{
@@ -473,7 +473,7 @@ footer > p > strong{
     }
     
     main div.horizontal-container h2{
-        font-size: 25px;
+        font-size: 22px;
     }
 
     main div.horizontal-container > .carousel {
@@ -496,11 +496,12 @@ footer > p > strong{
     main div.horizontal-container > div > p{
         padding: 0% 5% 0% 0%;
         text-align: justify;
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .link-container a{
-        font-size: 1em;
+        font-weight: bold;
+        font-size: 0.72em;
     }
 
     main div.right-container{
