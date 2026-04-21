@@ -254,6 +254,13 @@ main div.horizontal-container{
     gap: 30px;
 }
 
+main div.horizontal-container h2{
+    padding: 10px 20px 10px 10px;
+    margin: 0px 0px 15px 0px;
+    border-radius: 8px;
+    font-size: 30px;
+}
+
 main div.horizontal-container > .projects-text{
     flex: 1;
 }
@@ -331,10 +338,6 @@ main div.right-container{
 }
 
 main div.right-container h2{
-    padding: 10px 20px 10px 10px;
-    margin: 0px 0px 15px 0px;
-    border-radius: 8px;
-    font-size: 30px;
     background: linear-gradient(90deg, var(--blue3), var(--purple2), rgba(255, 255, 255, 0) 90%);
 }
 
@@ -348,10 +351,6 @@ main div.left-container{
 
 main div.left-container h2{
     color: white;
-    padding: 10px 20px 10px 10px;
-    margin: 0px 0px 15px 0px;
-    border-radius: 8px;
-    font-size: 30px;
     background: linear-gradient(90deg, var(--blue2), var(--blue1), rgba(255, 255, 255, 0) 100%);
 }
 
@@ -464,11 +463,19 @@ footer > p > strong{
         backdrop-filter: blur(8px);
     }
 
+    .title-h1{
+        font-size: 28px;
+    }
+
     main div.horizontal-container{
         flex-direction: column;
         padding: 5%;
     }
     
+    main div.horizontal-container h2{
+        font-size: 25px;
+    }
+
     main div.horizontal-container > .carousel {
         width: 80%;
         max-width: 100%;
@@ -492,6 +499,10 @@ footer > p > strong{
         font-size: 18px;
     }
     
+    .link-container a{
+        font-size: 1em;
+    }
+
     main div.right-container{
         /* padding: 5% 10% 5% 12%; */
         padding: 5% 3% 5% 110px;
